@@ -11,15 +11,40 @@ A Document Management System developed using mongoose, and ODM for Node
 ```
 npm install
 ```
-This will install all dependencies and devdependencies, Then start the program with `npm start`.
+This will install all `dependencies` and `dev-dependencies`.
+
+ - Start mongod
+ - CD to this project directory
+ - Type `npm start` 
+ - You should see a message `Success: http://localhost:3000`
 
 ### Test
-- Leave the app running
+- Leave the app instance running
 - Open a new terminal tab
-- CD to mongoose directory
+- CD to this project directory
 - Run `npm test`
 - Test Result can be found inside ./testResult folder
 
-## USING THE CLI
+## Using Command line Interface
 ### Run
 
+```
+node Terminal.js
+```
+This will start Node REPL
+
+ - Type: DM to see all operations possible with this app
+ - Type: .help to see few special REPL commands
+
+Here's an example creating a user
+
+```
+DM.createUser('Jack', 'Tom', 'tom@gmail.com', 'tomtom', 'helloworld', 'admin')
+    .then(function(user){
+      console.log(user)
+    });
+```
+
+**note**
+DM. must come before any query or promise.s
+Queries must follow this format `DM.<query>.<promise>`. 
