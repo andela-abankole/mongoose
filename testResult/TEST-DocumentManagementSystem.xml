@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Document Management System" errors="0" tests="0" failures="0" time="0" timestamp="2015-10-29T13:03:06">
+</testsuite>
+<testsuite name="Document Management System.Mongoose" errors="0" tests="0" failures="0" time="0" timestamp="2015-10-29T13:03:06">
+</testsuite>
+<testsuite name="Document Management System.Mongoose.Case for User" errors="0" tests="4" failures="0" time="0.011" timestamp="2015-10-29T13:03:06">
+  <testcase classname="Document Management System.Mongoose.Case for User" name="should verify that User is unique" time="0.005"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for User" name="should define a Role for `user`" time="0"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for User" name="should create both first and last names for `user`" time="0"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for User" name="should return all `users` when `getAllUsers()` is executed" time="0"></testcase>
+</testsuite>
+<testsuite name="Document Management System.Mongoose.Case for Role" errors="0" tests="2" failures="0" time="0.001" timestamp="2015-10-29T13:03:06">
+  <testcase classname="Document Management System.Mongoose.Case for Role" name="should verify that Role has a unique title " time="0.001"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for Role" name="should return all `roles` when `getAllRoles()` is executed" time="0"></testcase>
+</testsuite>
+<testsuite name="Document Management System.Mongoose.Case for Document" errors="0" tests="3" failures="0" time="0.001" timestamp="2015-10-29T13:03:06">
+  <testcase classname="Document Management System.Mongoose.Case for Document" name="should verify that document has a published date define" time="0"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for Document" name="should return all `documents`, limit by a specified number, when `getAllDocuments()` is executed" time="0.001"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for Document" name="should return all documents in order of published dates, starting from the most recent when `getAllDocuments()` is executed" time="0"></testcase>
+</testsuite>
+<testsuite name="Document Management System.Mongoose.Case for Search" errors="0" tests="2" failures="0" time="0.002" timestamp="2015-10-29T13:03:06">
+  <testcase classname="Document Management System.Mongoose.Case for Search" name="should verify all documents, limited by a specified number and ordered by published date, accessed by a specified role, and returned when `getAllDocumentsByRole()` is executed" time="0.001"></testcase>
+  <testcase classname="Document Management System.Mongoose.Case for Search" name="should verify all documents, limited by a specified number, that were published on a certain date, and returned when `getAllDocumentsByDate()` is executed" time="0.001"></testcase>
+</testsuite>
+</testsuites>
