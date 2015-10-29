@@ -46,5 +46,6 @@ DM.createUser('Jack', 'Tom', 'tom@gmail.com', 'tomtom', 'helloworld', 'admin')
 ```
 
 **note**
-DM. must come before any query or promise.s
-Queries must follow this format `DM.<query>.<promise>`. 
+
+- DM. must come before any query or promise.
+- Queries must follow this format `DM.<query>.<promise>`. 
